@@ -1,0 +1,352 @@
+{% extends "frontend/partition/layout.njk" %} {% block body %}
+<section id="hero" class="hero d-flex align-items-center section-bg">
+  <div class="container">
+    <div class="row justify-content-between gy-5">
+      <div
+        class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"
+      >
+        <h2 data-aos="fade-up">Enjoy Your Healthy<br />Delicious Food</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+          eveniet. Eum quas beatae cumque eum quaerat.
+        </p>
+      </div>
+      <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+        <img
+          src="/img/hero-img.png"
+          class="img-fluid"
+          alt=""
+          id="hero-img"
+          data-aos="zoom-out"
+          data-aos-delay="300"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero Section -->
+<main id="main">
+  <!-- About Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6 text-start">
+              <img
+                class="img-fluid rounded w-100 wow zoomIn"
+                data-wow-delay="0.1s"
+                src="img/events-1.jpg"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.1s;
+                  animation-name: zoomIn;
+                "
+              />
+            </div>
+            <div class="col-6 text-start">
+              <img
+                class="img-fluid rounded w-75 wow zoomIn"
+                data-wow-delay="0.3s"
+                src="img/gallery/gallery-8.jpg"
+                style="
+                  margin-top: 25%;
+                  visibility: visible;
+                  animation-delay: 0.3s;
+                  animation-name: zoomIn;
+                "
+              />
+            </div>
+            <div class="col-6 text-end">
+              <img
+                class="img-fluid rounded w-75 wow zoomIn"
+                data-wow-delay="0.5s"
+                src="img/about-2.jpg"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.5s;
+                  animation-name: zoomIn;
+                "
+              />
+            </div>
+            <div class="col-6 text-end">
+              <img
+                class="img-fluid rounded w-100 wow zoomIn"
+                data-wow-delay="0.7s"
+                src="img/gallery/gallery-6.jpg"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.7s;
+                  animation-name: zoomIn;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5> -->
+          <h1 class="mb-4">
+            Welcome to <i class="fa fa-utensils text-primary me-2"></i>108Meals
+          </h1>
+          <p class="mb-4">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem
+            sit.
+          </p>
+          <p class="mb-4">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
+          <div class="row g-4 mb-4">
+            <div class="col-sm-6">
+              <div
+                class="d-flex align-items-center border-start border-5 border-primary px-3"
+              >
+                <h1
+                  class="flex-shrink-0 display-5 text-primary mb-0"
+                  data-toggle="counter-up"
+                >
+                  15
+                </h1>
+                <div class="ps-4">
+                  <p class="mb-0">Years of</p>
+                  <h6 class="text-uppercase mb-0">Experience</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div
+                class="d-flex align-items-center border-start border-5 border-primary px-3"
+              >
+                <h1
+                  class="flex-shrink-0 display-5 text-primary mb-0"
+                  data-toggle="counter-up"
+                >
+                  50
+                </h1>
+                <div class="ps-4">
+                  <p class="mb-0">Popular</p>
+                  <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- ======= Menu Section ======= -->
+  <section id="menu" class="menu">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header text-center">
+        <h2>Glance of our menu</h2>
+      </div>
+
+      <ul
+        class="nav nav-tabs d-flex justify-content-center"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <li class="nav-item">
+          <a
+            class="nav-link active show"
+            data-bs-toggle="tab"
+            data-bs-target="#menu-lunch"
+          >
+            <h4>Lunch</h4>
+          </a>
+        </li>
+        <!-- End tab nav item -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#menu-dinner"
+          >
+            <h4>Dinner</h4>
+          </a>
+        </li>
+        <!-- End tab nav item -->
+      </ul>
+
+      <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+        <div class="tab-pane fade active show" id="menu-lunch">
+          <div class="tab-header text-center"></div>
+          <div class="row gy-5">
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-1.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-1.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Magnam Tiste</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$5.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-2.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-2.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Aut Luia</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$14.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-3.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-3.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Est Eligendi</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$8.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-4.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-4.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Eos Luibusdam</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$12.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-5.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-5.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Eos Luibusdam</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$12.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-6.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-6.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Laboriosam Direva</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$9.95</p>
+            </div>
+            <!-- Menu Item -->
+          </div>
+        </div>
+        <!-- End Lunch Menu Content -->
+
+        <div class="tab-pane fade" id="menu-dinner">
+          <div class="tab-header text-center"></div>
+          <div class="row gy-5">
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-1.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-1.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Magnam Tiste</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$5.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-2.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-2.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Aut Luia</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$14.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-3.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-3.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Est Eligendi</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$8.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-4.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-4.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Eos Luibusdam</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$12.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-5.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-5.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Eos Luibusdam</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$12.95</p>
+            </div>
+            <!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="img/menu/menu-item-6.png" class="glightbox"
+                ><img
+                  src="img/menu/menu-item-6.png"
+                  class="menu-img img-fluid"
+                  alt=""
+              /></a>
+              <h4>Laboriosam Direva</h4>
+              <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+              <p class="price">$9.95</p>
+            </div>
+            <!-- Menu Item -->
+          </div>
+        </div>
+        <!-- End Dinner Menu Content -->
+      </div>
+    </div>
+  </section>
+  <!-- End Menu Section -->
+</main>
+
+{% endblock %}
+<!-- home,about,servies,gallery,menu,events,contact -->

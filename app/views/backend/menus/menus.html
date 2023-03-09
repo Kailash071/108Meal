@@ -1,0 +1,38 @@
+{% extends "backend/partition/layout.njk" %} {% block body %}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex justify-content-between">
+      <h6 class="m-0 font-weight-bold text-primary">Menu Management</h6>
+      <a href="/admin/menus/add" title="Add Menu"
+        ><button class="btn font-weight-bold text-primary">Add</button></a
+      >
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table
+          class="table table-bordered"
+          id="dataTable"
+          width="100%"
+          cellspacing="0"
+        >
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Image</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container-fluid -->
+{% endblock %}

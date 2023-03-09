@@ -1,0 +1,56 @@
+{% extends "backend/partition/layout.njk" %} {% block body %}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3 d-flex justify-content-between">
+      <h6 class="m-0 font-weight-bold text-primary">
+        Menus Category Management
+      </h6>
+      <a href="/admin/menusCategory/addView" title="Add Menu"
+        ><button class="btn font-weight-bold text-primary">Add</button></a
+      >
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table
+          class="table table-bordered display"
+          id="menus_category_table"
+          width="100%"
+          cellspacing="0"
+        >
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container-fluid -->
+{% endblock %}
+{% block customScript %}
+<script>
+    $(document).ready(function () {
+      console.log("Loading menu category------->");
+      let host = window.location.origin;
+      let url = host + "/admin/menusCategory/list";
+      getData(url)
+      function getData(url) {
+        $("#menus_category_table").DataTable({
+          serverSide: true,
+          destroy: true,
+          responsive: true,
+          ajax: url,
+          columns: [{ data: "name" }, { data: "description" }, { data: "_id" }],
+        });
+      }
+    });
+  </script>
+{% endblock %}
